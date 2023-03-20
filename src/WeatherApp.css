@@ -1,0 +1,55 @@
+.WeatherApp {
+  width: 90%;
+  max-width: 900px;
+  border: 1px solid red;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 82px;
+  font-weight: 100;
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+}
+
+input,
+button {
+  padding: 6px 10px;
+
+  border: 1px solid black;
+}
+
+input {
+  width: 80%;
+  border-radius: 10px;
+}
+
+button.celsius {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+button.fahrenheit {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.main {
+  margin: 100px;
+}

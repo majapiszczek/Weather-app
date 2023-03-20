@@ -1,14 +1,17 @@
 import React from "react";
+import "./WeatherApp.css";
 
 export default function WeatherApp() {
   return (
     <div className="WeatherApp">
       <form>
         <input type="search" placeholder="Enter a city.." />
-        <button>°C</button>
-        <button>°F</button>
+        <div className="unit-buttons">
+          <button className="celsius">°C</button>
+          <button className="fahrenheit">°F</button>
+        </div>
       </form>
-      <div>
+      <div className="main">
         <h2>cloudy</h2>
         <p>chicago</p>
         <h1>20°</h1>
