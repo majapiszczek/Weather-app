@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./WeatherApp.css";
 import axios from "axios";
 import ReactLoading from "react-loading";
+import Forecast from "./Forecast.js";
 
 export default function WeatherApp(props) {
   const [loaded, setLoaded] = useState(false);
@@ -52,11 +53,7 @@ export default function WeatherApp(props) {
           <h1>{data.temperatureCelsius}°</h1>
         </div>
         <div>
-          <div>
-            <h3>mon</h3>
-            <p>icon</p>
-            <h4>10°</h4>
-          </div>
+          <Forecast dataCity={data.city} />
         </div>
       </div>
     );
