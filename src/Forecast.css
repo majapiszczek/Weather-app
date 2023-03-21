@@ -1,0 +1,16 @@
+.Forecast {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.Forecast h3,
+h4 {
+  font-weight: 100;
+  font-size: 14px;
+  margin: 0;
+}
+
+.Forecast img {
+  width: 60px;
+}
