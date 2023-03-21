@@ -1,12 +1,14 @@
 .WeatherApp {
   width: 90%;
   max-width: 900px;
-  border: 1px solid red;
+  border: 1px solid white;
   border-radius: 8px;
   padding: 16px;
-  margin: 0 auto;
+  margin: 60px auto;
   text-align: center;
   text-transform: uppercase;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 h1 {
@@ -25,29 +27,11 @@ form {
   justify-content: space-around;
 }
 
-input,
-button {
-  padding: 6px 10px;
-
-  border: 1px solid black;
-}
-
 input {
-  width: 80%;
+  padding: 6px 10px;
+  width: 100%;
   border-radius: 10px;
-}
-
-button.celsius {
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-}
-button.fahrenheit {
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-button:hover {
-  cursor: pointer;
+  border: 1px solid black;
 }
 
 .main {

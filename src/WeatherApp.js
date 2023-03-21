@@ -42,16 +42,13 @@ export default function WeatherApp(props) {
             placeholder="Enter a city.."
             onChange={handleCity}
           />
-          <div className="unit-buttons">
-            <button className="celsius">°C</button>
-            <button className="fahrenheit">°F</button>
-          </div>
         </form>
         <div className="main">
           <h2>{data.description}</h2>
           <p>{data.city}</p>
           <h1>{data.temperatureCelsius}°</h1>
         </div>
+        <hr />
         <div>
           <Forecast dataCity={data.city} />
         </div>
